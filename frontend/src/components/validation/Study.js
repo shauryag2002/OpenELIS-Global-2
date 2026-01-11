@@ -14,9 +14,7 @@ export const RoutineReportsMenu = {
       icon: IbmWatsonDiscovery,
       SideNavMenuItem: [
         {
-          link:
-            config.serverBaseUrl +
-            "/ResultValidationRetroC?type=Immunology&test=",
+          link: "/RetroCIValidation?type=Immunology",
           label: "Immunology - Hematology",
         },
       ],

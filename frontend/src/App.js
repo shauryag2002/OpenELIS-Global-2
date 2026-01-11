@@ -29,6 +29,7 @@ import ModifyOrder from "./components/modifyOrder/ModifyOrder";
 import RoutineReports from "./components/reports/Routine";
 import StudyReports from "./components/reports/Study";
 import StudyValidation from "./components/validation/Index";
+import RetroCIValidation from "./components/validation/RetroCIValidation";
 import AnalyserResultIndex from "./components/analyserResults/Index";
 import PathologyDashboard from "./components/pathology/PathologyDashboard";
 import CytologyDashboard from "./components/cytology/CytologyDashBoard";
@@ -664,6 +665,12 @@ export default function App() {
                   path="/ResultValidationByTestDate"
                   exact
                   component={() => <StudyValidation />}
+                  role={Roles.VALIDATION}
+                />
+                <SecureRoute
+                  path="/RetroCIValidation"
+                  exact
+                  component={() => <RetroCIValidation />}
                   role={Roles.VALIDATION}
                 />
                 <SecureRoute
